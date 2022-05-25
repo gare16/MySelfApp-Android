@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainPrimaryColor"
+    tools:context=".ui.ProfileFragment">
+
+    <TextView
+        android:id="@+id/titleDailyActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="25sp"
+        android:fontFamily="@font/dosis_bold"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/lineTitle1"
+        android:layout_width="65dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorBlackPearl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleDailyActivity"/>
+
+    <View
+        android:id="@+id/lineTitle2"
+        android:layout_width="65dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorBlackPearl"
+        app:layout_constraintTop_toBottomOf="@id/titleDailyActivity"
+        app:layout_constraintStart_toStartOf="@id/titleDailyActivity"/>
+
+
+    <ImageView
+        android:id="@+id/whiteBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_right_left_rounded"
+        android:layout_marginTop="150dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/image_tegar"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"/>
+
+    <TextView
+        android:id="@+id/nameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mochamad Tegar"
+        android:textSize="23sp"
+        android:textColor="@color/colorTextPrimary"
+        android:fontFamily="@font/dosis_bold"
+        app:layout_constraintTop_toBottomOf="@id/imageProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/quote"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintTop_toBottomOf="@id/nameProfile"
+        app:layout_constraintEnd_toStartOf="@id/quote_txt"/>
+
+    <TextView
+        android:id="@+id/quote_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="In the end it will make you think what to do."
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:fontFamily="@font/dosis_regular"
+        app:layout_constraintTop_toBottomOf="@id/nameProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/quote_txt">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/age_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/dosis_bold"
+                android:text="Age :"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/answ_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/age_txt"
+                android:text="21 Years"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp"
+                android:fontFamily="@font/dosis_regular"/>
+
+            <TextView
+                android:id="@+id/occupation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/age_txt"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/dosis_bold"
+                android:text="Occupation :"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/answ_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answ_age"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/occupation_txt"
+                android:fontFamily="@font/dosis_regular"
+                android:text="Freelance"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:text="Status :"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextPrimary"
+                android:fontFamily="@font/dosis_bold"
+                android:layout_below="@id/occupation_txt"/>
+
+            <TextView
+                android:id="@+id/answ_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answ_occupation"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/status_txt"
+                android:fontFamily="@font/dosis_regular"
+                android:text="Student"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_txt"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/dosis_bold"
+                android:text="Address :"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/answ_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answ_status"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/status_txt"
+                android:fontFamily="@font/dosis_regular"
+                android:text="Bandung, Indonesia"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/findmeLinks"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile"/>
+
+    <Button
+        android:id="@+id/aboutApps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_orange_rounded20"
+        android:text="About"
+        android:textColor="@color/colorTextPrimary"
+        android:fontFamily="@font/dosis_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findmeLinks"/>
+
+    <RelativeLayout
+        android:id="@+id/contactSocialMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/footer">
+
+        <ImageView
+            android:id="@+id/facebookLinks"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/instagramLinks"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toRightOf="@id/facebookLinks"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/gmailLinks"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toRightOf="@id/instagramLinks"
+            android:src="@drawable/gmail" />
+
+        <ImageView
+            android:id="@+id/whatsappLinks"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/gmailLinks"
+            android:src="@drawable/whatsapp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="@string/copyrights"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="10sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
