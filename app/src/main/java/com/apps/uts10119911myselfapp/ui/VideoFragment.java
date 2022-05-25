@@ -1,4 +1,7 @@
-package com.apps.uts10119911myselfapp;
+package com.apps.uts10119911myselfapp.ui;
+
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
 
 import android.os.Bundle;
 
@@ -10,9 +13,10 @@ import android.view.ViewGroup;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import com.apps.uts10119911myselfapp.R;
+
 public class VideoFragment extends Fragment {
 
-    String api_key = "AIzaSyCWHmF-K_7216GoF3m6Om-6YRUZ9JcO9yw";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

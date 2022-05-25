@@ -1,6 +1,8 @@
 package com.apps.uts10119911myselfapp;
 
-import android.app.Dialog;
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
+
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;

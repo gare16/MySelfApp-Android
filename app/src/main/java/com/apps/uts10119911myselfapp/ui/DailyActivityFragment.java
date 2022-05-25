@@ -18,7 +18,8 @@ import com.apps.uts10119911myselfapp.Adapter.FriendListRecyclerView;
 
 public class DailyActivityFragment extends Fragment {
 
-
+    // Created by Mochamad Tegar
+    // 5/25/2022 4:38 PM
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -1,6 +1,8 @@
 package com.apps.uts10119911myselfapp.ui;
 
-import android.app.AlertDialog;
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;

@@ -1,5 +1,8 @@
 package com.apps.uts10119911myselfapp.Adapter;
 
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

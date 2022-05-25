@@ -1,5 +1,8 @@
 package com.apps.uts10119911myselfapp.ui;
 
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
+
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,7 +15,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.apps.uts10119911myselfapp.R;
-import com.apps.uts10119911myselfapp.VideoFragment;
 
 public class FavoriteFragment extends Fragment {
 

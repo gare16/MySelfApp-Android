@@ -1,5 +1,8 @@
 package com.apps.uts10119911myselfapp;
 
+// Created by Mochamad Tegar
+// 5/25/2022 4:38 PM
+
 public class OnboardingItem {
     private int image;
     private String title;
